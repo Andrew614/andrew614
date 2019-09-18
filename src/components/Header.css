@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Raleway&display=swap');
+
+.main-header {
+    align-items: center;
+    background-color: #333;
+    color: #9d9d9d;
+    display: flex;
+    flex-direction: column;
+    font-family: raleway;
+    padding: .25rem 2rem;
+    width: 100%;
+}
+
+.navLink, .main-header__title {
+    color: #9d9d9d;
+    text-decoration: none;
+}
+
+.navLink:hover {
+  color: #ffffff;
+}
+  
+.nav__list li {
+    text-align: center;
+    margin: 1rem auto;
+    list-style-type: none;
+}
+  
+.nav__list-item:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+
+    .main-header {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
+    .nav__list {
+        display: flex;
+    }
+  
+    .nav__list li{
+        margin-right: 1rem;
+    }
+}
+
+.active {
+        color: white;
+        text-decoration: underline;
+}
