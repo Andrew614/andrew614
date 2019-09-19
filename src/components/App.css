@@ -2,3 +2,8 @@
     display: grid;
     grid-auto-rows: auto auto 2.5em;
 }
+
+.container {
+    min-height: 85vh;
+    padding: 1rem 2rem;
+}

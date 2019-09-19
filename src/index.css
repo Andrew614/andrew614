@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Raleway&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,4 +8,166 @@
   
 html {
     font: 20px/1 sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #0000ff;
+}
+  
+body {
+    background-color: #EDEDED;
+}
+
+footer {
+    align-items: center;
+    background-color: #333;
+    color: #9d9d9d;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.contact {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.contact__list {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+  
+.contact__list-item {
+    margin-right: 4rem;
+}
+  
+.contact__list-item:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.contact__list-item:last-child {
+    margin-right: 0;
+}
+  
+.contact__title {
+    font-family: "indie flower";
+    text-decoration: underline;
+}
+
+.main-header {
+    align-items: center;
+    background-color: #333;
+    color: #9d9d9d;
+    display: flex;
+    flex-direction: column;
+    font-family: raleway;
+    padding: .25rem 2rem;
+    width: 100%;
+}
+
+.navLink, .main-header__title {
+    color: #9d9d9d;
+    text-decoration: none;
+}
+
+.navLink:hover {
+  color: #ffffff;
+}
+  
+.nav__list li {
+    text-align: center;
+    margin: 1rem auto;
+    list-style-type: none;
+}
+  
+.nav__list-item:last-child {
+    margin-right: 0;
+}
+
+/* CONTACT FORM */
+
+.action input {
+    background-color: #444;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: .5rem;
+    padding: 1.25em;
+    width: 15%;
+}
+
+.action input:first-child {
+    background-color: #43B3E0;
+}
+
+.contact__form {
+    margin-top: 3rem;
+}
+
+.contact__form-data {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.info input {
+    border-radius: 10px;
+    font-size: 1rem;
+    margin: .5rem;
+    padding: .75em;
+    width: 35%;
+}
+
+.subject input {
+    border-radius: 10px;
+    font-size: 1rem;
+    margin: .5rem;
+    padding: .75em;
+    width: 71.5%;
+}
+
+.message textarea {
+    border-radius: 10px;
+    font-size: 1rem;
+    height: 10rem;
+    margin: .5rem;
+    padding: .75em;
+    width: 71.5%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+
+    .main-header {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
+    .nav__list {
+        display: flex;
+    }
+  
+    .nav__list li{
+        margin-right: 1rem;
+    }
+}
+
+/* APPLIED CLASSES */
+
+.active {
+    color: white;
+    text-decoration: underline;
 }
