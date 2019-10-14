@@ -4,6 +4,7 @@
 }
 
 .container {
+    background-image: linear-gradient(to bottom, white, #FFA07A);
     min-height: 85vh;
     padding: 1rem 2rem;
 }

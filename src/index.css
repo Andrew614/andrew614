@@ -63,6 +63,18 @@ ul {
     text-decoration: underline;
 }
 
+.home {
+    align-items: center;
+    background: url(https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+}
+
 .main-header {
     align-items: center;
     background-color: #333;
@@ -93,13 +105,71 @@ ul {
     margin-right: 0;
 }
 
+.portfolio {
+    margin: 2rem 0;
+}
+
+.portfolio__about-me {
+    grid-column: 1 / span 4;
+    margin-right: 2rem;
+}
+
+.portfolio__avatar {
+    grid-column: 5 / span 3;
+}
+
+.portfolio__content--grid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding-top: 2rem;
+}
+ 
+.portfolio__desciption {
+    font: 800 .9rem "indie flower";
+    text-align: center;
+}
+
+.portfolio__image {
+    border: solid white 2px;
+    border-radius: 15%;
+    box-shadow: 5px 7px 5px 10px #666;
+    height: auto;
+    width: 100%;
+}
+  
+.portfolio__list-item {
+    margin-top: 0.5rem;
+}
+  
+.portfolio__subtitle {
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.portfolio__title {
+    font-family: "indie flower";
+    margin-bottom: 1rem;
+    text-align: center;
+    text-decoration: underline;
+}
+  
+  .portfolio__title--margin {
+    margin-top: 3rem;
+}
+
 /* CONTACT FORM */
+
+.action {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 
 .action input {
     background-color: #444;
     border-radius: 10px;
     color: #fff;
-    font-size: 1rem;
     font-weight: 700;
     margin: .5rem;
     padding: 1.25em;
@@ -128,14 +198,6 @@ ul {
     width: 35%;
 }
 
-.subject input {
-    border-radius: 10px;
-    font-size: 1rem;
-    margin: .5rem;
-    padding: .75em;
-    width: 71.5%;
-}
-
 .message textarea {
     border-radius: 10px;
     font-size: 1rem;
@@ -145,7 +207,25 @@ ul {
     width: 71.5%;
 }
 
+.subject input {
+    border-radius: 10px;
+    font-size: 1rem;
+    margin: .5rem;
+    padding: .75em;
+    width: 71.5%;
+}
+
 /* MEDIA QUERIES */
+
+@media (min-width: 556px) {
+    .portfolio__about-me {
+      grid-column: 2 / span 3;
+    }
+  
+    .portfolio__skills {
+      margin-left: 14%;
+    }
+}
 
 @media (min-width: 768px) {
 
@@ -162,6 +242,18 @@ ul {
   
     .nav__list li{
         margin-right: 1rem;
+    }
+
+    .portfolio__about-me {
+        grid-column: 2 / span 2;
+    }
+    
+    .portfolio__avatar {
+        grid-column: 4 / span 3;
+    }
+
+    .portfolio__image {
+        width: 70%;
     }
 }
 
