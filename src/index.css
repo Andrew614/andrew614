@@ -65,7 +65,7 @@ ul {
 
 .home {
     align-items: center;
-    background: url(https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background: url(https://images.pexels.com/photos/276514/pexels-photo-276514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     color: white;
@@ -73,6 +73,18 @@ ul {
     flex-direction: column;
     height: 80vh;
     justify-content: center;
+}
+
+.home h1 {
+    animation: 
+        typing 4s steps(30, end),
+        blink-caret 1s step-end infinite;
+    border-right: .15em solid white;
+    color: #fff;
+    letter-spacing: .15em;
+    margin: .2em auto;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .main-header {
@@ -213,6 +225,18 @@ ul {
     margin: .5rem;
     padding: .75em;
     width: 71.5%;
+}
+
+/* ANIMATIONS/ KEY FRAMES */
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 22% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
 }
 
 /* MEDIA QUERIES */
